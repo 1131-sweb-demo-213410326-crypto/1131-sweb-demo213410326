@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(0, 255, 153);
+}
+
+.card {
+    background-color: rgb(151, 166, 179);
+    max-width: 300px;
+    border: 2px solid transparent;
+    margin: 32px auto;
+    padding: 24px 32px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-1 {
+    border-color: rgba(118, 255, 80, 0.5); 
+}
+
+.card-2 {
+    border-color: rgba(230, 36, 36, 0.5); 
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card-1 .icon {
+    background-color: rgb(109, 51, 164);
+}
+
+.card-2 .icon {
+    background-color: rgb(255, 80, 118);
+}
+
+
+.btn {
+    text-transform: capitalize;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+.btn-1 {
+    color:rgb(0, 255, 153) ;
+    background-color: rgb(17, 153, 153, 0.5);
+    border-color: rgb(21, 116, 116, 0.75);
+}
+
+
+.btn-2 {
+    color: rgb(226, 43, 64);
+    background-color: rgb(255, 80, 118, 0.5);
+    border-color: rgb(208, 29, 29, 0.75 );
+}
