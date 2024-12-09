@@ -1,19 +1,17 @@
 @import './global';
+.nav {
+  background: var(--white);
+  box-shadow: var(--shadow-2);
+  line-height: 1;
 
-//navbar
-.nav{
-background: var(--white);
-box-shadow: var(--shadow-2);
-line-height: 1;
-
-&-header{
+  &-header {
     display: flex;
-    justify-content: space-betwee;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
-}
+  }
 
-&-toggle{
+  &-toggle {
     font-size: 1.5rem;
     color: var(--primary-500);
     background: transparent;
@@ -21,39 +19,85 @@ line-height: 1;
     transition: var(--transition);
     cursor: pointer;
 
-    &:hover{
-        transform: rotate(90deg);
+    &:hover {
+      transform: rotate(90deg);
     }
-}
-.logo{
+  }
+
+  .logo {
     margin-bottom: 0;
 
-    span{
-        color: var(--primary-500);
+    span {
+      color: var(--primary-500);
     }
-}
+  }
 
-.social.icon{
+  .social.icon {
     display: none;
-}
+  }
 
-&-links{
+  &-links {
     margin: 0;
-    //height:0;
+    a {
+      color: var(--grey-700);
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      display: block;
+      letter-spacing: var(--letterspacing);
+      transition: var(--transition);
 
-    a{
-        color: var(--grey-700);
-        font-size: 1rem;
-        padding: 0.75rem 1rem;
-        display: block;
-        letter-spacing: var(--letterspacing);
-        transition: var(--transition);
-        
-        &:hover{
-            background: var(--primary-300);
-            color: var(--primary-500);
-            padding-left: 1.5rem ;
-        }
+      &:hover {
+        background: var(--primary-300);
+        color: var(--primary-500);
+        padding-left: 1.5rem;
+      }
     }
+  }
 }
+
+@media screen and (min-width: 800px) {
+  .nav {
+    &-toggle {
+      display: none;
+    }
+
+    &-center {
+      max-width: var(--max-width);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    &-links {
+      display: flex;
+
+      a {
+        padding: 0;
+        margin: 0 0.5rem;
+
+        &:hover {
+          background: transparent;
+          padding: 0;
+          padding-bottom: 3px;
+          border-bottom: 2px solid purple;
+        }
+      }
+    }
+
+    .social.icon {
+      display: flex;
+      padding-right: 1rem;
+
+      a {
+        margin: 0 0.5rem;
+        color: var(--primary-500);
+        transition: var(--transition);
+
+        &:hover {
+          color: var(--primary-300);
+        }
+      }
+    }
+  }
 }
